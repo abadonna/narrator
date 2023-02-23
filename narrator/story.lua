@@ -847,7 +847,7 @@ function Story:assignValueTo(variable, expression, temp)
   if self.constants[variable] ~= nil then
     return
   end
-  local value = self:doExpression(expression)
+  local value = type(expression) == 'number' and expression or self:doExpression(expression)
 
   if #variable == 0 then
     return
