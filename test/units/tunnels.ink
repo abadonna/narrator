@@ -8,6 +8,8 @@ The dark grass is soft under your feet.
 
 ->move_on-> 
 
+{true:->move_on->}
+
 ->end
 - (end)
 
